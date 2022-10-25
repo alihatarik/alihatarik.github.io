@@ -1,62 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>COMING SOON</title>
+    <title>PORTFOLIO WEBSITE</title>
+    <link rel="stylesheet" href="css/index_css.css">
 </head>
 <body>
-<div class="container">
-    <div class="content">
-       <h3 class="title">Coming Soon</h3>
-       <p>We are almost ready. Be one of the first to experience it by pressing the notify us button below. I will notify you as soon as it's live. Let's do this! </p>   
-     <div class="count_down">
-         <div class="box">
-             <h3 id="day">00</h3>
-             <span>day</span>
-         </div>
-         <div class="box">
-             <h3 id="hour">00</h3>
-             <span>hour</span>
-         </div>
-         <div class="box">
-             <h3 id="min">00</h3>
-             <span>min</span>
-          </div>
-          <div class="box">
-            <h3 id="sec">00</h3>
-            <span>second</span>
-         </div>
-     </div>
-     <a href=" https://www.fiverr.com/alihatarik" class="btn">Notify Me</a>
-    </div>
-    <div class="images">
-        <img src="images/img-1.gif" alt="Coming Soon">
-     </div>
-</div>
-<script>
-let countDate = new Date('dec 24,2022 00:00:00').getTime();
-function countDown(){
-    let now = new Date().getTime();
-    gap = countDate - now;
-
-    let second = 1000;
-    let minute = second * 60;
-    let hour = minute * 60;
-    let day = hour * 24;
-
-    let d = Math.floor(gap / (day));
-    let h = Math.floor((gap % (day)) / (hour));
-    let m = Math.floor((gap % (hour)) / (minute));
-    let s = Math.floor((gap % (minute))/ (second));
-
-    document.getElementById('day').innerText = d;
-    document.getElementById('hour').innerText = h;
-    document.getElementById('min').innerText = m;
-    document.getElementById('sec').innerText = s;
-}
-setInterval(function(){countDown();},1000);
-</script>
+    <section>
+        <header>
+            <a href="index.html"><img src="images/logo.png" class="logo"></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="port.html">Portfolio</a></li>
+                <li><a href="#">Resume</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+       
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Hi! I am <span>Aliha Tarik</span>.</h2>
+                <p>I am a Web and App Developer and this is the website that encases all my work. <br><span>Enjoy</span> </p>
+                <a href="#" class="btn">Portfolio<br></a>
+                <div class="space"></div>
+                <a href="https://github.com/alihatarik"><img src="images/github.png" class="sm"></a>
+                <a href="https://www.fiverr.com/users/alihatarik/"><img src="images/fiverr.png" class="sm"></a>
+                <a href="https://www.upwork.com/freelancers/~0151347ab63fbdbebb"><img src="images/up.png" class="sm"></a> 
+            </div>
+        </div>
+        <div class="image_box">
+        <img src="images/img-1.gif" class="computer">
+        </div>
+    
+       
+    </section>
 </body>
 </html>
