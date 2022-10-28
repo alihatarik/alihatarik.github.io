@@ -5,36 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PORTFOLIO WEBSITE</title>
     <link rel="stylesheet" href="css/index_css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <section>
-        <header>
-            <a href="index.html"><img src="images/logo.png" class="logo"></a>
-            <ul>
+<div class="container">
+    <div class="navbar">
+        <a href="index.html"><img src="images/logo.png" class="logo"></a>
+        <nav>
+            <ul id="menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="skills.html">Skills</a></li>
                 <li><a href="port.html">Portfolio</a></li>
                 <li><a href="#">Resume</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
-       
-        </header>
-        <div class="content">
-            <div class="textBox">
-                <h2>Hi! I am <span>Aliha Tarik</span>.</h2>
-                <p>I am a Web and App Developer and this is the website that encases all my work. <br><span>Enjoy</span> </p>
-                <a href="#" class="btn">Portfolio<br></a>
-                <div class="space"></div>
-                <a href="https://github.com/alihatarik"><img src="images/github.png" class="sm"></a>
-                <a href="https://www.fiverr.com/users/alihatarik/"><img src="images/fiverr.png" class="sm"></a>
-                <a href="https://www.upwork.com/freelancers/~0151347ab63fbdbebb"><img src="images/up.png" class="sm"></a> 
-            </div>
+        </nav>
+        <img src="images/menu.png" class="menu-icon" onclick="togglemenu()">
+    </div>
+    <div class="textr">
+        <div class="textc">
+            <h2>Hi!</h2>
+            <p>I am <strong>Aliha Tarik</strong>.</p>
+            <p1>This is my portfolio website where I upload all my website and app projects for you to see.</p1>
+            <h4>Enjoy!</h4>
+            <a href="port.html" class="button">Portfolio</a>
         </div>
-        <div class="image_box">
-        <img src="images/img-1.gif" class="computer">
+        <div class="imagebox">
+            <img src="images/img-1.gif" class="imgcon" alt="Computer gif">    
         </div>
-    
-       
-    </section>
+    </div>
+    <div class="social_media">
+            <a href="https://www.fiverr.com/alihatarik/"><img src="images/fiverr.png" alt="fiverr"></a>
+            <a href="https://www.upwork.com/freelancers/~0151347ab63fbdbebb"><img src="images/up.png" alt="upwork"></a>
+            <a href="https://github.com/alihatarik"><img src="images/github.png" alt="github"></a>
+    </div>
+</div>
+<script>
+    var menu = document.getElementById("menu");
+    menu.style.maxHeight = "0px";
+    function togglemenu(){
+        if(menu.style.maxHeight == "0px"){
+            menu.style.maxHeight = "190px";
+        }
+        else{
+            menu.style.maxHeight = "0px";
+        }
+    }
+
+</script>
 </body>
 </html>

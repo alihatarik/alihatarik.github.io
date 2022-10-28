@@ -3,29 +3,44 @@
 <head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LANDING PAGES</title>
+    <title>PORTFOLIO WEBSITE</title>
     <link rel="stylesheet" href="css/land_css.css">
 </head>
 <body>
-    <section>
-        <header>
-            <a href="index.html"><img src="images/logo.png" class="logo"></a>
-            <ul>
+<div class="container">
+    <div class="navbar">
+        <a href="index.html"><img src="images/logo.png" class="logo"></a>
+        <nav>
+            <ul id="menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="skills.html">Skills</a></li>
                 <li><a href="port.html">Portfolio</a></li>
                 <li><a href="#">Resume</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
-        </header>
-    </section> 
+        </nav>
+        <img src="images/menu.png" class="menu-icon" onclick="togglemenu()">
+    </div>
+</div>  
     <h2>Choose</h2>
     <div class="card">
         <a href="Coming Soon/index.html"><img src="images/landing-1.png" alt="Coming Soon" style="width:100%"></a>
-        <div class="container">
+        <div class="cont_1">
           <h4><b>Coming Soon</b></h4>
         </div>
-     </div>
-  
+      </div>
+     <script>
+        var menu = document.getElementById("menu");
+        menu.style.maxHeight = "0px";
+        function togglemenu(){
+            if(menu.style.maxHeight == "0px"){
+                menu.style.maxHeight = "190px";
+            }
+            else{
+                menu.style.maxHeight = "0px";
+            }
+        }
+    
+</script>
 </body>
 </html>

@@ -7,45 +7,58 @@
     <link rel="stylesheet" href="css/port_css.css">
 </head>
 <body>
-    <section>
-        <header>
-            <a href="index.html"><img src="images/logo.png" class="logo"></a>
-            <ul>
+<div class="container">
+    <div class="navbar">
+        <a href="index.html"><img src="images/logo.png" class="logo"></a>
+        <nav>
+            <ul id="menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="skills.html">Skills</a></li>
                 <li><a href="port.html">Portfolio</a></li>
                 <li><a href="#">Resume</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
-        </header>
-    </section> 
-    <h2>Choose</h2>
-    <div class="card">
-        <a href="land.html"><img src="images/port_img_1.png" alt="Landing Pages" style="width:100%"></a>
-        <div class="container">
-          <h4><b>Landing Pages</b></h4>
-        </div>
-        </div>
-        <div class="card">
-        <a href="site.html"><img src="images/port_img_2.jpg" alt="website Pages" style="width:100%"></a>
-        <div class="container">
-          <h4><b>Websites</b></h4>
-        </div>
-        </div>
-        <div class="card">
-        <a href="app.html"><img src="images/port_img_3.png" alt="App Designs" style="width:100%"></a>
-        <div class="container">
-          <h4><b>Apps</b></h4>
-        </div>
-        </div>
-        <div class="card">
-        <a href="figma.html"><img src="images/port_img_4.png" alt="Figma" style="width:100%"></a>
-        <div class="container">
-          <h4><b>Figma Designs</b></h4>
-        </div>
-        </div>
-
-      </div>
-  
+        </nav>
+        <img src="images/menu.png" class="menu-icon" onclick="togglemenu()">
+    </div>
+</div>  
+<h2>Choose</h2>
+<div class="card">
+  <a href="land.html"><img src="images/port_img_1.png" alt="Landing Pages" style="width:100%"></a>
+  <div class="cont_1">
+    <h4><b>Landing Pages</b></h4>
+  </div>
+</div>
+<div class="card">
+  <a href="site.html"><img src="images/port_img_2.jpg" alt="Site" style="width:100%"></a>
+  <div class="cont_1">
+    <h4><b>Website</b></h4>
+  </div>
+</div>
+<div class="card">
+  <a href="app.html"><img src="images/port_img_3.png" alt="Apps" style="width:100%"></a>
+  <div class="cont_1">
+    <h4><b>Apps</b></h4>
+  </div>
+</div>
+<div class="card">
+  <a href="figma.html"><img src="images/port_img_4.png" alt="Figma" style="width:100%"></a>
+  <div class="cont_1">
+    <h4><b>Figma Design</b></h4>
+  </div>
+</div>
+<script>
+        var menu = document.getElementById("menu");
+        menu.style.maxHeight = "0px";
+        function togglemenu(){
+            if(menu.style.maxHeight == "0px"){
+                menu.style.maxHeight = "190px";
+            }
+            else{
+                menu.style.maxHeight = "0px";
+            }
+        }
+    
+</script>
 </body>
 </html>
